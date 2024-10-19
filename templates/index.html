@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHQ-9 Assessment</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Mental Health Tool</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Form Container -->
+    <div class="container mt-5">
+        <h1 class="text-center">PHQ-9 Depression Assessment</h1>
+        <form method="POST">
+            <p>Over the last 2 weeks, how often have you been bothered by any of the following problems?</p>
+
+            <label for="q1">1. Little interest or pleasure in doing things:</label>
+            <input type="number" name="q1" min="0" max="3" required><br>
+
+            <label for="q2">2. Feeling down, depressed, or hopeless:</label>
+            <input type="number" name="q2" min="0" max="3" required><br>
+
+            <label for="q3">3. Trouble falling or staying asleep, or sleeping too much?  :</label>
+            <input type="number" name="q3" min="0" max="3" required><br>
+            
+            <label for="q4">4. Feeling tired or having little energy?  :</label>
+            <input type="number" name="q4" min="0" max="3" required><br>
+            
+            <label for="q5">5. Poor appetite or overeating?  :</label>
+            <input type="number" name="q5" min="0" max="3" required><br>
+            
+            <label for="q6">6. Feeling bad about yourself - or that you are a failure or have let yourself or your family down?  :</label>
+            <input type="number" name="q6" min="0" max="3" required><br>
+            
+            <label for="q7">7. Trouble concentrating on things, such as reading the newspaper or watching television?  :</label>
+            <input type="number" name="q7" min="0" max="3" required><br>
+            
+            <label for="q8">8. Moving or speaking so slowly that other people could have noticed?Or the opposite—being so fidgety or restless that you have been moving around a lot more than usual?  :</label>
+            <input type="number" name="q8" min="0" max="3" required><br>
+            
+            <label for="q9">9. Thoughts that you would be better off dead, or of hurting yourself in some way:</label>
+            <input type="number" name="q9" min="0" max="3" required><br>
+            
+            <label for="mood">Describe your mood</label>
+            <textarea name="mood" rows="4" cols="50" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="text-center p-3">
+            © 2024 Mental Health Tool | <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+</body>
+</html>
